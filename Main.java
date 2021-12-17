@@ -11,12 +11,7 @@ import java.util.Scanner;
 /**
 * This is a program that blanks.
 */
-final class Main{
-
-    /**
-    * Constant.
-    */
-    //public static final double CONSTANT = 1;
+final class Main {
 
     /**
     * Prevent instantiation.
