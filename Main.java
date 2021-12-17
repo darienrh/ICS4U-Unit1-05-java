@@ -29,7 +29,7 @@ final class Main {
     private Main() {
         throw new IllegalStateException("Cannot be instantiated");
     }
-    public static float boardFoot(float width, float height) {
+    public static float boardFoot(final float width, final float height) {
         float length;
         length = C144 / (width * height);
         return length;
