@@ -11,7 +11,7 @@ import java.util.Scanner;
 /**
 * XX.
 */
-final class Main{
+final class Main {
 
     /**
     * 144.
@@ -56,7 +56,8 @@ final class Main{
             height = myInput.nextFloat();
 
             length = boardFoot(width, height);
-            System.out.println("The wood should be " + length + " inch(es) long.");
+            System.out.println("The wood should be " + length
+              + " inch(es) long.");
 
         } catch (java.util.InputMismatchException errorCode) {
         // Block of code to handle errors
@@ -64,4 +65,3 @@ final class Main{
         }
     }
 }
- 
