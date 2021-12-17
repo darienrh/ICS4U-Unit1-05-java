@@ -1,17 +1,22 @@
 /*
-* The "Template" program is a template
+* The "XX" program
 *
 * @author  Darien RH
 * @version 1.0
-* @since   2021-12-XX
+* @since   2021-12-16
 */
 
 import java.util.Scanner;
 
 /**
-* This is a program that blanks.
+* XX.
 */
-final class Main {
+final class Main{
+
+    /**
+    * 144.
+    */
+    public static final int C144 = 144;
 
     /**
     * Prevent instantiation.
@@ -26,7 +31,7 @@ final class Main {
     }
     public static float boardFoot(float width, float height) {
         float length;
-        length = 144 / (width * height);
+        length = C144 / (width * height);
         return length;
     }
     /**
@@ -36,8 +41,8 @@ final class Main {
     */
     public static void main(final String[] args) {
         // variables
-        float width;
-        float height;
+        final float width;
+        final float height;
         final float length;
 
         final Scanner myInput = new Scanner(System.in);
@@ -46,18 +51,11 @@ final class Main {
         try {
             System.out.print("Please enter the board width.  ");
             width = myInput.nextFloat();
-            while (width <= 0) {
-                System.out.print("Sorry only positive numbers are accepted.  Enter the width. ");
-                width = myInput.nextFloat();  // Retry Input
-        }
+
             System.out.print("Please enter the board height.  ");
             height = myInput.nextFloat();
-            while (height <= 0) {
 
-                System.out.print("Sorry only positive numbers are accepted.  Enter the height. ");
-                height = myInput.nextFloat();  //Retry Input
-            }
-            length = boardFoot(width,height);
+            length = boardFoot(width, height);
             System.out.println("The wood should be " + length + " inch(es) long.");
 
         } catch (java.util.InputMismatchException errorCode) {
@@ -66,3 +64,4 @@ final class Main {
         }
     }
 }
+ 
